@@ -71,7 +71,7 @@ function App() {
                   </a>
                   <button onClick={() => handleNavigation('home')}>Home</button>
                   <button onClick={() => handleNavigation('login')}>
-                    Admin
+                    Gini's Dashboard
                   </button>
                 </div>
               </nav>
