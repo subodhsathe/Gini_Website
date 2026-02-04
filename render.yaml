@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: gini-server
+    env: node
+    plan: free
+    buildCommand: npm install && cd frontend && npm ci --legacy-peer-deps && npm run build
+    startCommand: node server.js
+    envVars:
+      - key: MONGODB_URI
+        scope: run_and_build
+      - key: GINI_PASSWORD
+        scope: run_and_build
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=2048
