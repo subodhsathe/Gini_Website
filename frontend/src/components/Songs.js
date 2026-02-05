@@ -80,6 +80,8 @@ const Songs = () => {
     <div className="section">
       <h2>Suggest a Song to Gini</h2>
 
+      <h3 style={{"margin-bottom": "24px", "color": "#0000ff"}}>Top 5 suggestions are sent to Gini's Dashboard!</h3>
+
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Song Title</label>
@@ -98,7 +100,7 @@ const Songs = () => {
       </form>
 
       <div style={{ marginTop: '40px' }}>
-        <h3>Latest Suggestions ({songs.length})</h3>
+        <h3>Latest Suggestions ({songs.length}) (max: latest 10)</h3>
         {songs.length === 0 ? (
           <p style={{ color: '#999' }}>No songs suggested yet. Be the first!</p>
         ) : (

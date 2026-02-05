@@ -28,6 +28,7 @@ const AdminLogin = ({ onLoginSuccess }) => {
     <div className="login-container">
       <div className="login-form">
         <h2>🎵 Gini's Dashboard</h2>
+        <h3 style={{"margin-bottom": "24px", "color": "#0000ff"}}>Only Gini can login to this dashboard</h3>
         {error && <p style={{ color: '#ff6b6b', marginBottom: '20px' }}>{error}</p>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -36,7 +37,7 @@ const AdminLogin = ({ onLoginSuccess }) => {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter your password"
+              placeholder="Enter the password"
               disabled={loading}
               autoFocus
             />

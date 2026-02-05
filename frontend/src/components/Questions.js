@@ -80,6 +80,8 @@ const Questions = () => {
     <div className="section">
       <h2>Ask Gini a Question</h2>
 
+      <h3 style={{"margin-bottom": "24px", "color": "#0000ff"}}>Top 5 questions are sent to Gini's Dashboard!</h3>
+
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Your Question</label>
@@ -97,7 +99,7 @@ const Questions = () => {
       </form>
 
       <div style={{ marginTop: '40px' }}>
-        <h3>Latest Questions ({questions.length})</h3>
+        <h3>Latest Questions ({questions.length}) (max: latest 10)</h3>
         {questions.length === 0 ? (
           <p style={{ color: '#999' }}>No questions yet. Be the first to ask!</p>
         ) : (
