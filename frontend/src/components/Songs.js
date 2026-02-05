@@ -80,7 +80,7 @@ const Songs = () => {
     <div className="section">
       <h2>Suggest a Song to Gini</h2>
 
-      <h3 style={{"margin-bottom": "24px", "color": "#0000ff"}}>Top 5 suggestions are sent to Gini's Dashboard!</h3>
+      <h3 style={{"margin-bottom": "24px", "color": "#0000ff"}}>Top 5 song suggestions are sent to Gini's Dashboard!</h3>
 
       <form onSubmit={handleSubmit}>
         <div className="form-group">
